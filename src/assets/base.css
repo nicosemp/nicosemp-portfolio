@@ -10,7 +10,8 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
+  min-height: -webkit-fill-available;
   transition: color 0.5s, background-color 0.5s;
   font-family: "Urbanist", sans-serif;
   text-rendering: optimizeLegibility;
