@@ -4,13 +4,18 @@
 
 @layer base {
   body {
-    @apply bg-teal-900 text-white;
   }
 
   h1 {
-    @apply text-6xl;
+    @apply text-3xl md:text-6xl;
   }
   h2 {
-    @apply text-3xl;
+    @apply text-xl md:text-3xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-red-600;
   }
 }
