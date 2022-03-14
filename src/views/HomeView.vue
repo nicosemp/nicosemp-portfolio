@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed, ref, watch } from "vue";
-import { useDraggable, useWindowSize } from "@vueuse/core";
+import { useDraggable } from "@vueuse/core";
+import { useInnerSize } from "@/composables/innerSize";
 import HomeRectangle from "@/components/HomeRectangle.vue";
+
+const { width, height } = useInnerSize();
 
 const draggableSize = ref(112);
 
-const { width, height } = useWindowSize();
 const threshold = 20;
 const xLimits = computed(() => {
   return {
@@ -51,28 +53,28 @@ watch([width, height], () => {
       class="bg-sky-200 text-sky-800 fixed top-0 left-0 overflow-hidden"
       :style="{ width: x + 56 + 'px', height: y + 56 + 'px' }"
     >
-      <HomeRectangle class="top-0 left-0" />
+      <HomeRectangle class="top-0 left-0" :height="height" :width="width" />
     </div>
 
     <div
       class="bg-green-200 text-green-800 fixed top-0 right-0 overflow-hidden"
       :style="{ width: width - x - 56 + 'px', height: y + 56 + 'px' }"
     >
-      <HomeRectangle class="top-0 right-0" />
+      <HomeRectangle class="top-0 right-0" :height="height" :width="width" />
     </div>
 
     <div
       class="bg-amber-200 text-amber-800 fixed left-0 bottom-0 overflow-hidden"
       :style="{ width: x + 56 + 'px', height: height - y - 56 + 'px' }"
     >
-      <HomeRectangle class="bottom-0 left-0" />
+      <HomeRectangle class="bottom-0 left-0" :height="height" :width="width" />
     </div>
 
     <div
       class="bg-red-200 text-red-800 fixed right-0 bottom-0 overflow-hidden"
       :style="{ width: width - x - 56 + 'px', height: height - y - 56 + 'px' }"
     >
-      <HomeRectangle class="bottom-0 right-0" />
+      <HomeRectangle class="bottom-0 right-0" :height="height" :width="width" />
     </div>
 
     <div

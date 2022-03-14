@@ -3,19 +3,37 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-  }
-
   h1 {
     @apply text-3xl md:text-6xl;
   }
   h2 {
     @apply text-xl md:text-3xl;
   }
+  h3 {
+    @apply md:text-xl;
+  }
+  a {
+    @apply cursor-pointer;
+  }
 }
 
 @layer components {
-  .btn {
-    @apply bg-red-600;
+  .special-link {
+    @apply text-3xl;
+    &:after {
+      content: "";
+      width: calc(100% + 1rem);
+      @apply absolute -left-2 bottom-1 h-3 -z-10 transition-all;
+    }
+    &:hover:after {
+      @apply bottom-0 h-10;
+    }
+  }
+
+  .pills {
+    @apply my-2 flex flex-wrap gap-2;
+    span {
+      @apply bg-slate-200 px-3 py-1 rounded-full inline-block;
+    }
   }
 }
