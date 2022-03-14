@@ -48,16 +48,16 @@ watch([width, height], () => {
 </script>
 
 <template>
-  <main class="relative">
+  <main class="">
     <HomeRectangle
-      class="skin-sky bg-skin-200 text-skin-800 fixed top-0 left-0 overflow-hidden"
+      class="skin-sky"
       position="top-0 left-0"
       :height="height"
       :width="width"
       :style="{ width: x + 56 + 'px', height: y + 56 + 'px' }"
     />
     <HomeRectangle
-      class="skin-green bg-skin-200 text-skin-800 fixed top-0 right-0 overflow-hidden"
+      class="skin-green"
       position="top-0 right-0"
       :height="height"
       :width="width"
@@ -65,7 +65,7 @@ watch([width, height], () => {
     />
 
     <HomeRectangle
-      class="skin-amber bg-skin-200 text-skin-800 fixed left-0 bottom-0 overflow-hidden"
+      class="skin-amber"
       position="bottom-0 left-0"
       :height="height"
       :width="width"
@@ -73,7 +73,7 @@ watch([width, height], () => {
     />
 
     <HomeRectangle
-      class="skin-red bg-skin-200 text-skin-800 fixed right-0 bottom-0 overflow-hidden"
+      class="skin-red"
       position="bottom-0 right-0"
       :height="height"
       :width="width"

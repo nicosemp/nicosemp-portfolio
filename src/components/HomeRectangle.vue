@@ -5,7 +5,10 @@ const props =
 </script>
 
 <template>
-  <div>
+  <div
+    class="fixed overflow-hidden bg-skin-200 text-skin-800"
+    :class="position"
+  >
     <div
       class="absolute"
       :class="position"
@@ -41,5 +44,3 @@ const props =
     </div>
   </div>
 </template>
-
-<style scoped></style>
