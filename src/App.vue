@@ -11,7 +11,15 @@ import { RouterLink, RouterView } from "vue-router";
     </div>
   </header> -->
 
-  <RouterView />
+  <RouterView v-slot="{ Component, route }">
+    <Transition
+      :enter-active-class="route.meta.enterClass"
+      :leave-active-class="route.meta.leaveClass"
+      mode="out-in"
+    >
+      <component :is="Component" />
+    </Transition>
+  </RouterView>
 </template>
 
 <style>

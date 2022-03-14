@@ -4,7 +4,11 @@
 
 @layer base {
   :root {
+    --skin-200: 186 230 253;
     --skin-500: 14 165 233;
+    --skin-800: 7 89 133;
+    /* Animate.css */
+    --animate-duration: 200ms;
   }
   .skin-sky {
     --skin-200: 186 230 253;
