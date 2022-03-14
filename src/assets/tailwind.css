@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --skin-500: 14 165 233;
+  }
+  .skin-sky {
+    --skin-200: 186 230 253;
+    --skin-500: 14 165 233;
+    --skin-800: 7 89 133;
+  }
+  .skin-green {
+    --skin-200: 187 247 208;
+    --skin-500: 34 197 94;
+    --skin-800: 22 101 52;
+  }
+  .skin-amber {
+    --skin-200: 253 230 138;
+    --skin-500: 245 158 11;
+    --skin-800: 146 64 14;
+  }
+  .skin-red {
+    --skin-200: 254 202 202;
+    --skin-500: 239 68 68;
+    --skin-800: 153 27 27;
+  }
+
   h1 {
     @apply text-3xl md:text-6xl;
   }
@@ -23,7 +47,7 @@
     &:after {
       content: "";
       width: calc(100% + 1rem);
-      @apply absolute -left-2 bottom-1 h-3 -z-10 transition-all;
+      @apply bg-skin-500 absolute -left-2 bottom-1 h-3 -z-10 transition-all;
     }
     &:hover:after {
       @apply bottom-0 h-10;

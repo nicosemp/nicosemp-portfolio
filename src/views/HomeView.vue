@@ -49,33 +49,36 @@ watch([width, height], () => {
 
 <template>
   <main class="relative">
-    <div
-      class="bg-sky-200 text-sky-800 fixed top-0 left-0 overflow-hidden"
+    <HomeRectangle
+      class="skin-sky bg-skin-200 text-skin-800 fixed top-0 left-0 overflow-hidden"
+      position="top-0 left-0"
+      :height="height"
+      :width="width"
       :style="{ width: x + 56 + 'px', height: y + 56 + 'px' }"
-    >
-      <HomeRectangle class="top-0 left-0" :height="height" :width="width" />
-    </div>
-
-    <div
-      class="bg-green-200 text-green-800 fixed top-0 right-0 overflow-hidden"
+    />
+    <HomeRectangle
+      class="skin-green bg-skin-200 text-skin-800 fixed top-0 right-0 overflow-hidden"
+      position="top-0 right-0"
+      :height="height"
+      :width="width"
       :style="{ width: width - x - 56 + 'px', height: y + 56 + 'px' }"
-    >
-      <HomeRectangle class="top-0 right-0" :height="height" :width="width" />
-    </div>
+    />
 
-    <div
-      class="bg-amber-200 text-amber-800 fixed left-0 bottom-0 overflow-hidden"
+    <HomeRectangle
+      class="skin-amber bg-skin-200 text-skin-800 fixed left-0 bottom-0 overflow-hidden"
+      position="bottom-0 left-0"
+      :height="height"
+      :width="width"
       :style="{ width: x + 56 + 'px', height: height - y - 56 + 'px' }"
-    >
-      <HomeRectangle class="bottom-0 left-0" :height="height" :width="width" />
-    </div>
+    />
 
-    <div
-      class="bg-red-200 text-red-800 fixed right-0 bottom-0 overflow-hidden"
+    <HomeRectangle
+      class="skin-red bg-skin-200 text-skin-800 fixed right-0 bottom-0 overflow-hidden"
+      position="bottom-0 right-0"
+      :height="height"
+      :width="width"
       :style="{ width: width - x - 56 + 'px', height: height - y - 56 + 'px' }"
-    >
-      <HomeRectangle class="bottom-0 right-0" :height="height" :width="width" />
-    </div>
+    />
 
     <div
       ref="draggable"
