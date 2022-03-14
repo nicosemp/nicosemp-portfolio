@@ -2,6 +2,8 @@
 import { RouterLink } from "vue-router";
 import CurriculumBlock from "@/components/CurriculumBlock.vue";
 // TODO: cosa manca nel curriculum? altri lavori secondari con toggle?
+// - corsi online e università: tutto insieme
+// - altri lavori, sottolineando ciò che ho imparato
 
 const print = () => window.print();
 </script>
@@ -11,7 +13,7 @@ const print = () => window.print();
     <div class="flex justify-between mb-4 print:hidden">
       <RouterLink :to="{ name: 'home' }" class="special-link">Home</RouterLink>
 
-      <a class="special-link special-link-green" @click="print">Print</a>
+      <a class="special-link special-link-green" @click="print">Print / PDF</a>
     </div>
 
     <h1 class="text-center uppercase border-b border-black text-5xl">
@@ -162,7 +164,6 @@ ul {
 
 .container {
   max-width: 1024px;
-  min-width: 1024px;
   @apply px-8;
 }
 .special-link {
@@ -175,6 +176,16 @@ ul {
     &:after {
       @apply bg-green-200;
     }
+  }
+}
+
+/* Styles for printing */
+@page {
+  size: A4 portrait;
+}
+@media print {
+  .container {
+    min-width: 1024px;
   }
 }
 </style>
