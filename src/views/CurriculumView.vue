@@ -9,7 +9,7 @@ const print = () => window.print();
 </script>
 
 <template>
-  <div class="container pt-6">
+  <div class="container py-6">
     <div class="flex justify-between mb-4 print:hidden">
       <RouterLink :to="{ name: 'home' }" class="special-link">Home</RouterLink>
 
@@ -33,8 +33,9 @@ const print = () => window.print();
       </div>
     </div>
 
-    <h2 class="uppercase border-b border-black">Professional Experience</h2>
-
+    <h2 class="uppercase border-b border-black mb-2">
+      Professional Experience
+    </h2>
     <CurriculumBlock
       company="In-Place"
       place="Rome, Italy"
@@ -51,7 +52,6 @@ const print = () => window.print();
         Investment and Economic Development.
       </p>
     </CurriculumBlock>
-
     <CurriculumBlock
       company="Made in Tomorrow"
       place="Rome, Italy"
@@ -90,7 +90,6 @@ const print = () => window.print();
         <li>Followed and managed 2 interns working on different projects.</li>
       </ul>
     </CurriculumBlock>
-
     <CurriculumBlock
       company="Freelancer"
       place="Rome, Italy"
@@ -123,6 +122,67 @@ const print = () => window.print();
     </CurriculumBlock>
 
     <h2 class="uppercase border-b border-black mb-2">
+      Further Work Experience
+    </h2>
+    <CurriculumBlock
+      company="Summer Study Programs"
+      place="Penn State University, PA, USA"
+      position="Staff Advisor / Office Staff / Medical Coordinator"
+      date="July-August 2015 and 2016"
+    >
+      <p>Main duties:</p>
+      <ul>
+        <li>
+          Supervising 12 high school students under my direct responsibility.
+        </li>
+        <li>
+          Planning activities for 200+ students in cooperation with other staff
+          members.
+        </li>
+        <li>Coordination of medical needs for all students.</li>
+      </ul>
+    </CurriculumBlock>
+    <CurriculumBlock
+      company="Made in Tomorrow"
+      place="Rome, Italy"
+      position="Internship: Software developer"
+      date="Summer 2013 and 2015"
+    >
+      <p>Main projects:</p>
+      <ul>
+        <li>
+          Development of digital contents for an exhibit held the Italian
+          Encyclopedia.
+        </li>
+        <li>Development of custom themes and plugins for the Wordpress CMS.</li>
+      </ul>
+    </CurriculumBlock>
+
+    <h2 class="uppercase border-b border-black mb-2">Education</h2>
+    <CurriculumBlock company="" place="" position="" date="">
+      <ul>
+        <li>Understanding Typescript - <i>Academind on Udemy</i></li>
+        <li>
+          Vue - The Complete Guide (incl. Router & Composition API) -
+          <i>Academind on Udemy</i>
+        </li>
+        <li>Flutter & Dart - <i>Academind on Udemy</i></li>
+        <li>
+          Software development foundations (Python) -
+          <i>Università degli Studi di Roma "La Sapienza"</i>
+        </li>
+        <li>
+          Differential calculus -
+          <i>Università degli Studi di Roma "La Sapienza"</i>
+        </li>
+        <li>
+          Web development - <i>Università degli Studi di Roma "Tor Vergata"</i>
+        </li>
+        <li>High School diploma - <i>Liceo Scientifico Cavour - PNI</i></li>
+      </ul>
+    </CurriculumBlock>
+
+    <h2 class="uppercase border-b border-black mb-2">
       Skills and personal interests
     </h2>
     <p class="font-semibold">Programming skills</p>
@@ -133,11 +193,6 @@ const print = () => window.print();
       ><span>Cypress.io</span><span>PHP</span><span>MySQL</span
       ><span>Wordpress</span><span>Dart</span><span>Flutter</span
       ><span>Git</span>
-    </div>
-    <p class="font-semibold">Languages</p>
-    <div class="pills">
-      <span>English: professional level, both written and spoken</span
-      ><span>Italian: mother tongue</span>
     </div>
     <p class="font-semibold">Personal Interests</p>
     <div class="pills">
