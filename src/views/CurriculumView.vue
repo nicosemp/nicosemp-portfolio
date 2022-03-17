@@ -33,7 +33,7 @@ const print = () => window.print();
       <div class="basis-1/2 border-l border-black pl-4">
         <p class="mb-2">Viale di Porta Ardeatina, 118, 00154, Rome, Italy</p>
         <p class="mb-2">nicosemp@gmail.com</p>
-        <p>Italian: mother tongue</p>
+        <p>Italian: native language</p>
       </div>
     </div>
 
@@ -66,7 +66,7 @@ const print = () => window.print();
         <p>
           Working in the IT department, developing web applications with Vue.js
           front-end and Node.js back-end, custom Wordpress themes and plugins
-          for websites of any size, Android and iOS applications with Flutter.
+          for websites of any size, Android, and iOS applications with Flutter.
         </p>
         <p>Main projects:</p>
         <ul>
@@ -74,7 +74,7 @@ const print = () => window.print();
             Developed a new web app with Vue.js for a large internet service
             provider. It increased the loading speed by a factor of 3. Users can
             now manage their contracts and invoices with an interface that is
-            faster, more intuitive and reliable.
+            faster, more intuitive, and dependable.
           </li>
           <li>
             Developed an infographic for a convention held by a United Nations
@@ -85,8 +85,8 @@ const print = () => window.print();
             track impressions and clicks.
           </li>
           <li>
-            Developed a large e-Commerce for food distribution with many custom
-            pages and functionalities, to manage hundreds of orders per month.
+            Developed a large e-Commerce for food distribution with custom pages
+            and functionalities, to manage hundreds of orders per month.
           </li>
           <li>
             Promoted for the adoption of new tools and workflows, always looking
@@ -110,7 +110,7 @@ const print = () => window.print();
         <ul>
           <li>
             Developed an e-Commerce for a large chain of restaurants to receive
-            and handle table bookings, home deliveries, and pick-up requests.
+            and manage table bookings, home deliveries, and pick-up requests.
             Increased the order management speed, which resulted in a
             significant increase in income for the restaurants.
           </li>
@@ -158,7 +158,7 @@ const print = () => window.print();
         <p>Main projects:</p>
         <ul>
           <li>
-            Development of digital contents for an exhibit held the Italian
+            Development of digital contents for an exhibit held by the Italian
             Encyclopedia.
           </li>
           <li>
