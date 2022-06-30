@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
 import CurriculumBlock from "@/components/CurriculumBlock.vue";
 // TODO: cosa manca nel curriculum? altri lavori secondari con toggle?
 // - corsi online e università: tutto insieme

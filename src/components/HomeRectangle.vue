@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
-const props =
-  defineProps<{ width: number; height: number; position: string }>();
+const props = defineProps<{
+  width: number;
+  height: number;
+  position: string;
+}>();
 </script>
 
 <template>
